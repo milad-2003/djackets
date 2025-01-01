@@ -21,26 +21,30 @@ Djackets is a full-featured e-commerce platform built with Django and Vue.js, pr
 ### Backend Setup
 
 1. Ensure you have Python and `pipenv` installed on your system.
-
 2. Clone the repository:
    ```bash
    git clone https://github.com/milad-2003/djackets/
    cd djackets
    ```
-
-3. Set up a virtual environment with pipenv:
+3. Create a virtual environment and activate it:
    ```bash
    pipenv shell
+   ```
+4. Install dependencies:
+   ```bash
    pipenv install
    ```
-
-4. Run database migrations:
+5. Run migrations:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
-
-5. Start the development server:
+6. Create a superuser to access the admin panel:
+   ```bash
+   python manage.py createsuperuser
+   ```
+7. Access the admin panel at `http://127.0.0.1:8000/admin` and create two categories: **Summer** and **Winter**. You can also add products in the admin panel.
+8. Start the Django development server:
    ```bash
    python manage.py runserver
    ```
