@@ -68,6 +68,11 @@ Djackets is a full-featured e-commerce platform built with Django and Vue.js, pr
    npm run serve
    ```
 
+5. Open your browser and go to:
+   ```bash
+   127.0.0.1:8080
+   ```
+
 ---
 
 ## Contributing
